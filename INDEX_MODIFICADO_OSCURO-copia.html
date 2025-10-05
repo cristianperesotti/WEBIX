@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Webix — Hacemos que tu negocio aparezca en Google</title>
+<meta content="Optimización de Perfil Google, páginas web simples y creación de logos. Pedí tu diagnóstico gratis y llevá clientes desde Google." name="description"/>
+<style>
+    /* ====== Reset mínimo y fuentes ====== */
+    :root{
+      --bg:#0B1F2A; --card:#0A2430; --accent:#0DC2C0; --accent-2:#1A9CF5;
+      --text:#e6eef8; --muted:#9aa6b2; --success:#10b981;
+      --radius:14px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; background:linear-gradient(180deg,#042A33 0%, #0B4C60 100%);
+      color:var(--text); -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale; padding-bottom:120px;
+    }
+    a{color:inherit; text-decoration:none}
+    .container{max-width:980px; margin:20px auto; padding:18px;}
+    /* ====== Header / Hero ====== */
+    header{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+    .logo{
+      width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      display:flex;align-items:center;justify-content:center;font-weight:700;color:white;font-size:18px;
+      box-shadow:0 6px 20px rgba(0,0,0,0.6);
+    }
+    .brand h1{margin:0;font-size:18px}
+    .brand p{margin:0;color:var(--muted);font-size:13px}
+    .hero{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.00));
+      border-radius:var(--radius); padding:18px; margin:10px 0; box-shadow:0 6px 30px rgba(0,0,0,0.6);
+      display:flex; gap:18px; align-items:center; flex-wrap:wrap;
+    }
+    .hero-left{flex:1; min-width:220px}
+    .kicker{display:inline-block;background:rgba(255,255,255,0.04);padding:6px 10px;border-radius:999px;font-size:12px;color:var(--muted);margin-bottom:8px}
+    h2{margin:0 0 8px 0; font-size:22px; line-height:1.05}
+    p.lead{margin:0;color:var(--muted);font-size:14px}
+    .hero-ctas{display:flex; gap:10px; margin-top:12px; flex-wrap:wrap}
+    .btn{
+      background:var(--accent); color:white; padding:12px 16px; border-radius:12px; font-weight:700;
+      box-shadow:0 8px 30px rgba(124,58,237,0.18); border:0; cursor:pointer;
+    }
+    .btn.secondary{
+      background:transparent; border:1px solid rgba(255,255,255,0.06); color:var(--text); font-weight:600;
+    }
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:12px}
+    .card{background:rgba(255,255,255,0.02); padding:12px;border-radius:12px; min-height:80px}
+    .card h3{margin:0 0 6px 0;font-size:15px}
+    .card p{margin:0;color:var(--muted);font-size:13px}
+    /* ====== Servicios ====== */
+    .services{display:grid;grid-template-columns:1fr;gap:12px;margin-top:18px}
+    .service{
+      display:flex; gap:12px; align-items:flex-start; background:linear-gradient(180deg, rgba(255,255,255,0.015), transparent);
+      padding:14px;border-radius:12px;
+    }
+    .service .icon{width:56px;height:56px;border-radius:10px;background:rgba(255,255,255,0.03);display:flex;align-items:center;justify-content:center;font-weight:700}
+    .service h4{margin:0 0 6px 0}
+    .service p{margin:0;color:var(--muted);font-size:13px}
+    /* ====== Pricing ====== */
+    .pricing{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .plan{background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:16px;border-radius:12px;flex:1;min-width:200px}
+    .plan h4{margin:0 0 8px 0}
+    .plan .price{font-size:20px;font-weight:800;margin-bottom:8px}
+    .small{font-size:13px;color:var(--muted)}
+    /* ====== Testimonials ====== */
+    .testimonials{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .testimonial{background:rgba(255,255,255,0.02); padding:12px;border-radius:12px; min-width:220px}
+    /* ====== FAQ ====== */
+    details{background:rgba(255,255,255,0.02); padding:10px;border-radius:10px;margin-top:8px}
+    summary{font-weight:700}
+    /* ====== Footer & sticky CTA ====== */
+    footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center;padding-bottom:40px}
+    .sticky{
+      position:fixed; right:16px; bottom:16px; z-index:999;
+      box-shadow:0 8px 30px rgba(0,0,0,0.5);
+    }
+    .whatsapp-btn{
+      display:flex; align-items:center; gap:10px; background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      color:white;padding:12px 16px;border-radius:999px;font-weight:800;border:0; cursor:pointer;
+    }
+    /* ====== Responsive tweaks ====== */
+    @media(min-width:880px){
+      .hero{padding:28px}
+      .hero{display:flex}
+      .hero-right{width:340px}
+    }
+  </style>
+<link href="WhatsApp Image 2025-10-05 at 12.37.13 PM.jpeg" rel="icon" type="image/jpeg"/></head>
+<body>
+<div class="container">
+<header>
+<div class="logo"><img alt="Logo Webix" src="WhatsApp Image 2025-10-05 at 12.37.13 PM.jpeg" style="width:56px;height:56px;border-radius:12px;object-fit:cover;"/></div>
+<div class="brand">
+<h1>WEBIX</h1>
+<p>Posicionamiento SEO local  • Páginas Web • Logos que venden</p>
+</div>
+</header>
+<!-- HERO -->
+<section aria-labelledby="hero-title" class="hero">
+<div class="hero-left">
+<div class="kicker">Oferta limitada • Diagnóstico GRATIS</div>
+<h2 id="hero-title">Hacemos que tu negocio aparezca en Google y reciba clientes reales</h2>
+<p class="lead">Creación de perfil en Google, landing lista para clientes y diseño de logo. Resultados medibles en 7 días.</p>
+<div class="hero-ctas">
+<!-- Reemplazar el número en data-phone y en el script abajo -->
+<button class="btn" data-phone="549341294944" id="contactNow">Hablar por WhatsApp</button>
+<a class="btn secondary" href="#servicios">Ver servicios</a>
+</div>
+<div class="features" style="margin-top:14px">
+<div class="card">
+<h3>✅ Resultado claro</h3>
+<p class="small">Tu ficha de Google optimizada para aparecer en búsquedas locales.</p>
+</div>
+<div class="card">
+<h3>⚡ Rápido</h3>
+<p class="small">Implementación express: diagnóstico y solución en 7 días.</p>
+</div>
+<div class="card">
+<h3>🔒 Sin contratos largos</h3>
+<p class="small">Planes mensuales o pagos por servicio — vos decidís.</p>
+</div>
+</div>
+</div>
+<!-- HERO RIGHT: Resumen + CTA -->
+<div class="hero-right" style="min-width:260px">
+<div style="background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:14px;border-radius:12px">
+<p class="small" style="margin:0 0 8px 0">Visitas al perfil esta semana</p>
+<div style="font-size:28px;font-weight:800">+1.400 visualizaciones</div>
+<p class="small" style="margin-top:8px">Convierte estas visitas en clientes con un perfil optimizado y una landing que vende.</p>
+<div style="margin-top:12px">
+<button class="btn" data-phone="549341294944" id="contactNow2">Quiero mi diagnóstico</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SERVICIOS -->
+<section aria-label="Servicios" class="services" id="servicios">
+<div class="service">
+<div class="icon">G</div>
+<div>
+<h4>Optimización de Perfil Google</h4>
+<p>Configuramos y optimizamos tu ficha para aparecer en búsquedas locales y Google Maps. Fotos, descripción y palabras clave correctas.</p>
+</div>
+</div>
+<div class="service">
+<div class="icon">🌐</div>
+<div>
+<h4>Landing / Página simple</h4>
+<p>Landing optimizada para convertir tráfico en mensajes. Ideal para promocionar ofertas y captar leads por WhatsApp.</p>
+</div>
+</div>
+<div class="service">
+<div class="icon">✏️</div>
+<div>
+<h4>Diseño de logo y marca</h4>
+<p>Logo profesional listo para web y redes, con variantes para uso en perfiles y marcas de agua.</p>
+</div>
+</div>
+</section>
+<!-- PRICING -->
+<section aria-label="Precios" class="pricing">
+<div class="plan">
+<h4>Plan Rápido — Perfil Básico</h4>
+<div class="price">$14.900 ARS</div>
+<div class="small">Optimización de ficha + 3 fotos + título y descripción. Entrega en el días.</div>
+<div style="margin-top:10px">
+<button class="btn" onclick="openWhatsAppQuick('Quiero%20el%20Plan%20Rápido%20-%20Perfil%20Básico')">Lo quiero</button>
+</div>
+</div>
+<div class="plan">
+<h4>Landing + WhatsApp</h4>
+<div class="price">$19.900 ARS</div>
+<div class="small">Landing one-page + botón WhatsApp y formulario. Entrega 24 horas.</div>
+<div style="margin-top:10px">
+<button class="btn" onclick="openWhatsAppQuick('Quiero%20la%20Landing%20con%20WhatsApp')">Lo quiero</button>
+</div>
+</div>
+<div class="plan">
+<h4>Pack Marca Completa</h4>
+<div class="price">$39.900 ARS</div>
+<div class="small">Logo + Perfil Google + Landing. 10% descuento si pagás hoy.</div>
+<div style="margin-top:10px">
+<button class="btn" onclick="openWhatsAppQuick('Quiero%20el%20Pack%20Marca%20Completa')">Lo quiero</button>
+</div>
+</div>
+</section>
+<!-- TESTIMONIOS -->
+<section aria-label="Testimonios" class="testimonials">
+<div class="testimonial">
+<strong>María,Tienda de Ropa</strong>
+<p class="small">"En 10 días subieron las consultas por whatsapp y empezaron a venir al local. Muy profesionales y rápidos."</p>
+</div>
+<div class="testimonial">
+<strong>Alberto, Electricista</strong>
+<p class="small">"Me hicieron la landing y en la primera semana recibí 5 consultas por trabajos. Excelente."</p>
+</div>
+<div class="testimonial">
+<strong>Sergio, Restaurant</strong>
+<p class="small">"Contraté logo + ficha y noté la diferencia. La gente me encontró por zona y horario."</p>
+</div>
+</section>
+
+<!-- CASOS DE ÉXITO -->
+  <section class="success" id="casos">
+    <h3>Casos de éxito</h3>
+    <p class="small">Algunos negocios a los que ayudamos a mejorar su posicionamiento en Google:</p>
+    <div class="success-grid">
+      <div class="case">
+        <h4> GOOL Cosquin</h4>
+        <p class="small">+100 visualizaciones y más ventas en 15 días</p>
+        <div class="case-images">
+          <img src="https://res.cloudinary.com/dh1qqui2h/image/upload/v1759698480/WhatsApp_Image_2025-10-05_at_12.56.16_PM_wzrbqu.jpg" width="250" height="400" alt="GOOL Cosquin rendimiento 1">
+          <img src="https://res.cloudinary.com/dh1qqui2h/image/upload/v1759698490/WhatsApp_Image_2025-10-05_at_12.56.16_PM_1_mlbbbl.jpg" width="250" height="400" alt="GOOL Cosquin rendimiento 2">
+        </div>
+      </div>
+      <div class="case">
+        <h4> Fuego y Sabor</h4>
+        <p class="small">+400% en consultas de pedidos y ventas en local</p>
+        <div class="case-images">
+          <img src="https://res.cloudinary.com/dh1qqui2h/image/upload/v1759698488/WhatsApp_Image_2025-10-05_at_12.56.17_PM_msw2ym.jpg" width="250" height="400" alt="Fuego y Sabor rendimiento 1">
+          <img src="https://res.cloudinary.com/dh1qqui2h/image/upload/v1759698448/WhatsApp_Image_2025-10-05_at_12.56.17_PM_1_dbskwa.jpg" width="250" height="400" alt="Fuego y Sabor rendimiento 2">
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- FORMULARIO RÁPIDO (opcional) -->
+<section style="margin-top:18px">
+<h3 style="margin:0 0 8px 0">Pedí tu diagnóstico gratis</h3>
+<p class="small" style="margin:0 0 10px 0">Completá y te contacto por WhatsApp.</p>
+<form id="quickForm" onsubmit="handleForm(event)" style="display:grid;gap:8px;max-width:520px">
+<input id="name" name="name" placeholder="Tu nombre" required="" style="padding:10px;border-radius:10px;border:0;background:rgba(255,255,255,0.02);color:var(--text)"/>
+<input id="business" name="business" placeholder="Nombre del negocio" style="padding:10px;border-radius:10px;border:0;background:rgba(255,255,255,0.02);color:var(--text)"/>
+<input id="phone" name="phone" placeholder="Teléfono (opcional)" style="padding:10px;border-radius:10px;border:0;background:rgba(255,255,255,0.02);color:var(--text)"/>
+<textarea id="note" name="note" placeholder="¿Qué necesitás? (opcional)" style="padding:10px;border-radius:10px;border:0;background:rgba(255,255,255,0.02);color:var(--text);min-height:90px"></textarea>
+<div style="display:flex;gap:8px">
+<button class="btn" type="submit">Enviar y hablar por WhatsApp</button>
+<button class="btn secondary" onclick="scrollToContact()" type="button">Contacto</button>
+</div>
+</form>
+</section>
+<!-- FAQ -->
+<section style="margin-top:18px">
+<h3 style="margin:0 0 8px 0">Preguntas frecuentes</h3>
+<details><summary>¿Cuánto tarda la optimización del perfil?</summary>
+<p class="small">Normalmente 2-7 días, depende de la verificación y carga de contenido.</p>
+</details>
+<details><summary>¿Cobran mantenimiento mensual?</summary>
+<p class="small">No obligatorio. Podés contratar mantenimiento para actualizar fotos y posts.</p>
+</details>
+<details><summary>¿Puedo pagar en cuotas?</summary>
+<p class="small">Sí, aceptamos transferencia,Mercado Pago y Tarjetas de Credito (consultá condiciones).</p>
+</details>
+</section>
+<footer>
+<p>© <strong>WEBIX</strong> — Servicios digitales. <span style="display:block;margin-top:6px">¿Necesitás ayuda ahora? Hacé clic en el botón verde.</span></p>
+<p class="small" style="margin-top:6px">Diseño optimizado para convertir tráfico en mensajes</p>
+</footer>
+</div>
+<!-- STICKY WHATSAPP BUTTON -->
+<div class="sticky">
+<button class="whatsapp-btn" data-phone="549341294944" id="stickyWhats">
+<!-- Simple icon -->
+<svg height="20" style="filter:drop-shadow(0 2px 6px rgba(0,0,0,0.25))" viewbox="0 0 24 24" width="20">
+<path d="M20.5 3.5A11 11 0 1 0 21 14.8L23 21l-6.2-1.6A11 11 0 0 0 20.5 3.5zM12 5.8c-3.4 0-6.2 2.8-6.2 6.2 0 1.1.3 2.2.9 3.2L6 17l2.2-.6c.9.5 1.9.8 3 .8 3.4 0 6.2-2.8 6.2-6.2S15.4 5.8 12 5.8z" fill="white"></path>
+</svg>
+      Hablar por WhatsApp
+    </button>
+</div>
+<script>
+    /* ====== IMPORTANT: reemplazar el número por tu número real ======
+       Formato recomendado para Argentina móvil: 54 9 <código-de-area-sin-0> <número>
+       Ejemplo Córdoba: 549341294944
+    */
+    function getPhoneFromButtons(){
+      // toma el número del primer botón configurado
+      const btn = document.querySelector('[data-phone]');
+      return btn ? btn.getAttribute('data-phone') : '549341294944';
+    }
+
+    function openWhatsAppLink(phone, text){
+      // text debe estar ya encodeURIComponent
+      const url = https://wa.me/${phone}?text=${text};
+      window.open(url, '_blank');
+    }
+
+    // Handler para botones de compra rápida
+    function openWhatsAppQuick(message){
+      const phone = getPhoneFromButtons();
+      const msg = encodeURIComponent(message + " - Vine desde la landing de Webix.");
+      openWhatsAppLink(phone, msg);
+    }
+
+    // Botones principales
+    document.getElementById('contactNow').addEventListener('click', function(){
+      openWhatsAppQuick("Hola, quiero más info sobre cómo aparecer en Google (diagnóstico gratis)");
+    });
+    document.getElementById('contactNow2').addEventListener('click', function(){
+      openWhatsAppQuick("Hola, quiero el diagnóstico rápido. Mi negocio:");
+    });
+
+    // Sticky button
+    document.getElementById('stickyWhats').addEventListener('click', function(){
+      openWhatsAppQuick("Hola! Quiero info y presupuesto — te escribo desde la landing.");
+    });
+
+    // Form handler: abre WhatsApp con detalle del formulario
+    function handleForm(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value || '';
+      const business = document.getElementById('business').value || '';
+      const phoneUsr = document.getElementById('phone').value || '';
+      const note = document.getElementById('note').value || '';
+
+      const message = Hola, soy ${name}. Mi negocio: ${business}. Tel: ${phoneUsr}. Nota: ${note}. Quiero el diagnóstico gratis.;
+      const phone = getPhoneFromButtons();
+      const msg = encodeURIComponent(message);
+      openWhatsAppLink(phone, msg);
+    }
+
+    // pequeña ayuda: scroll al contacto
+    function scrollToContact(){
+      window.scrollTo({top: document.body.scrollHeight - 300, behavior:'smooth'});
+    }
+
+    // Extra: si querés pre-cargar el número desde URL (ej: ?wa=549341294944)
+    (function(){
+      const params = new URLSearchParams(location.search);
+      if(params.has('wa')){
+        const wa = params.get('wa').replace(/\D/g,'');
+        if(wa.length>8){
+          // sustituye data-phone en todos los botones
+          document.querySelectorAll('[data-phone]').forEach(el=>el.setAttribute('data-phone', wa));
+        }
+      }
+    })();
+  </script>
+</body>
+</html>
