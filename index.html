@@ -286,7 +286,7 @@
 
     function openWhatsAppLink(phone, text){
       // text debe estar ya encodeURIComponent
-      const url = https://wa.me/${phone}?text=${text};
+      const url =  `https://wa.me/${phone}?text=${text}`;
       window.open(url, '_blank');
     }
 
